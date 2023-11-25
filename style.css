@@ -34,3 +34,21 @@ hr{
     background-color: rgb(69,123,157);
     border: 0;
 }
+
+.logo {
+    height: 3em;
+    }
+
+#gitLogo{
+    padding-right: 0.5em;
+}
+
+#gitHubLogo{
+    padding-left: 0.5em;
+}
+
+.footerLogo{  
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
