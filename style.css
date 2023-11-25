@@ -1,22 +1,36 @@
 h1{
     text-align: center;
     font-family: verdana, sans-serif;
+    color: rgb(29,53,87);
+}
+
+p{
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 dt{
     font-size: 1.25em;
+    font-family: verdana, sans-serif;
 }
 
 dd{
     padding-bottom: 1em;
+    font-family:Georgia, 'Times New Roman', Times, serif; 
 }
 
 body{
-    background-color: lightgrey;
+    background-color: rgb(168,218,220);
 }
 
 div{
     padding: 1em;
-    background-color: white;
+    background-color: rgb(241,250,238);
     border-radius: 25px;
+}
+
+hr{
+    height: 1px;
+    background-color: rgb(69,123,157);
+    border: 0;
 }
