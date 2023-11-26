@@ -15,6 +15,7 @@ dt{
     background-color: rgb(230, 236, 228);
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
+    background-image: linear-gradient(to right,rgb(230, 236, 228),rgb(239, 245, 238));
 }
 
 dd{
