@@ -1,73 +1,134 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Git, GitHub">
-    <meta name="description" content="Glossary of Git commands.">
-    <meta name="author" content="Cassandra Lee">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="Git, GitHub" />
+    <meta name="description" content="Glossary of Git commands." />
+    <meta name="author" content="Cassandra Lee" />
     <title>10 GIT Commands</title>
-    <link rel="stylesheet" href="./style.css"/>
-</head>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
 
-<body>
+  <body>
+    <div class="outer">
+      <h1>Git Commands Glossary</h1>
 
-    <div>
-    <h1>Git Commands Glossary</h1>
-   
-    <hr>
+      <hr />
 
-        <p>New to Git? This glossary provides definitions for 10 Git Commands.</p>
-        
-    <hr>
+      <p class="description">
+        New to Git? This glossary provides definitions for 10 Git Commands.
+      </p>
 
-    <div class="card">
-        <dt>Git Add</dt>
-        <dd>Moves changes from the working directory to the staging area. This gives you the opportunity to prepare a snapshot before committing it to the official history.</dd>
+      <hr />
+
+      <div class="container">
+        <div class="card">
+          <h3>Git Add</h3>
+          <p>
+            Moves changes from the working directory to the staging area. This
+            gives you the opportunity to prepare a snapshot before committing it
+            to the official history.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Git Branch</h3>
+          <p>
+            This command is your general-purpose branch administration tool. It
+            lets you create isolated development environments within a single
+            repository.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Git Clone</h3>
+          <p>
+            Creates a copy of an existing Git repository. Cloning is the most
+            common way for developers to obtain a working copy of a central
+            repository.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Git Commit</h3>
+          <p>
+            Takes the staged snapshot and commits it to the project history.
+            Combined with git add, this defines the basic workflow for all Git
+            users.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Git Init</h3>
+          <p>
+            Initializes a new Git repository. If you want to place a project
+            under revision control, this is the first command you need to learn.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Git Log</h3>
+          <p>
+            Lets you explore the previous revisions of a project. It provides
+            several formatting options for displaying committed snapshots.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Git Merge</h3>
+          <p>
+            A powerful way to integrate changes from divergent branches. After
+            forking the project history with git branch, git merge lets you put
+            it back together again.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Git Pull</h3>
+          <p>
+            Pulling is the automated version of git fetch. It downloads a branch
+            from a remote repository, then immediately merges it into the
+            current branch. This is the Git equivalent of svn update.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Git Push</h3>
+          <p>
+            Pushing is the opposite of fetching (with a few caveats). It lets
+            you move a local branch to another repository, which serves as a
+            convenient way to publish contributions. This is like svn commit,
+            but it sends a series of commits instead of a single changeset.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Git Status</h3>
+          <p>
+            Displays the state of the working directory and the staged snapshot.
+            You’ll want to run this in conjunction with git add and git commit
+            to see exactly what’s being included in the next snapshot.
+          </p>
+        </div>
+      </div>
+
+      <footer class="footerLogo">
+        <a href="https://git-scm.com/"
+          ><img
+            src="Git-Icon-Black.svg"
+            alt="Git logo"
+            id="gitLogo"
+            class="logo"
+        /></a>
+        <a href="https://github.com/"
+          ><img
+            src="github-mark.svg"
+            alt="GitHub logo"
+            id="gitHubLogo"
+            class="logo"
+        /></a>
+      </footer>
     </div>
-
-    <dl>
-
-        <dt>Git Add</dt>
-        <dd>Moves changes from the working directory to the staging area. This gives you the opportunity to prepare a snapshot before committing it to the official history.</dd>
-
-        <dt>Git Branch</dt>
-        <dd>This command is your general-purpose branch administration tool. It lets you create isolated development environments within a single repository.</dd>
-
-        <dt>Git Clone</dt>
-        <dd>Creates a copy of an existing Git repository. Cloning is the most common way for developers to obtain a working copy of a central repository.</dd>
-
-        <dt>Git Commit</dt>
-        <dd>Takes the staged snapshot and commits it to the project history. Combined with git add, this defines the basic workflow for all Git users.</dd>
-
-        <dt>Git Init</dt>
-        <dd>Initializes a new Git repository. If you want to place a project under revision control, this is the first command you need to learn.</dd>
-
-        <dt>Git Log</dt>
-        <dd>Lets you explore the previous revisions of a project. It provides several formatting options for displaying committed snapshots.</dd>
-
-        <dt>Git Merge</dt>
-        <dd>A powerful way to integrate changes from divergent branches. After forking the project history with git branch, git merge lets you put it back together again.</dd>
-
-        <dt>Git Pull</dt>
-        <dd>Pulling is the automated version of git fetch. It downloads a branch from a remote repository, then immediately merges it into the current branch. This is the Git equivalent of svn update.</dd>
-
-        <dt>Git Push</dt>
-        <dd>Pushing is the opposite of fetching (with a few caveats). It lets you move a local branch to another repository, which serves as a convenient way to publish contributions. This is like svn commit, but it sends a series of commits instead of a single changeset.</dd>
-
-        <dt>Git Status</dt>
-        <dd>Displays the state of the working directory and the staged snapshot. You’ll want to run this in conjunction with git add and git commit to see exactly what’s being included in the next snapshot.</dd>
-
-    </dl>
-
-    <footer class="footerLogo">
-        <a href="https://git-scm.com/"><img src="Git-Icon-Black.svg" alt="Git logo" id="gitLogo" class="logo"></a>
-        <a href="https://github.com/"><img src="github-mark.svg" alt="GitHub logo" id="gitHubLogo" class="logo"></a>
-    </footer>
-
-    </div>
-
-</body>
-
+  </body>
 </html>
